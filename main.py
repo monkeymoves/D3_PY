@@ -16,6 +16,10 @@ class WorkoutData:
         """computes total exercise load"""
         weightMoved = self.reps * self.sets * self.weightUsed
         return weightMoved
+    
+    def morale(self) -> str:
+        """hypes up the user"""
+        print("doing lots of *", self.exercise, "* will help you carry the fking boats")
 
 
 TRAINING_SESSION = {
@@ -32,6 +36,7 @@ def main():
 
     print(testWerk.totalWeight())
     print(TRAINING_SESSION["push"].totalWeight())
+    print(testWerk.morale())
 
 
 if __name__ == "__main__":
