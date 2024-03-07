@@ -20,7 +20,7 @@ class WorkoutData:
 
 TRAINING_SESSION = {
     "pull": WorkoutData(exercise="rows", reps=10, sets=5, weightUsed=8, rest=24),
-    "push": WorkoutData(exercise="rows", reps=10, sets=5, weightUsed=8, rest=24),
+    "push": WorkoutData(exercise="rows", reps=10, sets=5, weightUsed=18, rest=24),
 }
 
 testWerk = WorkoutData(exercise="rows", reps=10, sets=5, weightUsed=8, rest=24)
@@ -28,10 +28,10 @@ testWerk = WorkoutData(exercise="rows", reps=10, sets=5, weightUsed=8, rest=24)
 
 def main():
     print(TRAINING_SESSION.keys())
-    print("hi")
     print(TRAINING_SESSION["pull"])
 
     print(testWerk.totalWeight())
+    print(TRAINING_SESSION["push"].totalWeight())
 
 
 if __name__ == "__main__":
